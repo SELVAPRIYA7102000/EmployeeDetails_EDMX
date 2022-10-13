@@ -1,0 +1,31 @@
+﻿@model FirstDb.Models.Emps
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmpView</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm("Insert", "New"))
+        {
+
+            <label>EmployeeId</label>
+            @Html.TextBoxFor(@model => model.EmpId)<br/>
+
+            <label>Name</label>
+            @Html.TextBoxFor(@model => model.EmpName)<br />
+
+            <label>Age</label>
+            @Html.TextBoxFor(@model => model.EmpAge)
+            <input type="submit" name="Create" />
+        }
+    </div>
+</body>
+</html>
