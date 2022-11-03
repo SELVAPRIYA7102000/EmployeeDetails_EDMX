@@ -33,7 +33,7 @@ namespace FirstDb.Controllers
 
             }
                
-                return View();
+                return View("EmpView");
         }
     }
 }
